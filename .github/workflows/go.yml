@@ -27,7 +27,7 @@ jobs:
     - name: Upload Release
       uses: softprops/action-gh-release@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
       with:
         files: 'WinCryptSSHAgent*.exe'
         draft: true
